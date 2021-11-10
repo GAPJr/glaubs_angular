@@ -1,0 +1,14 @@
+<!-- Larissa -->
+<div>
+  <label for="">Username</label>
+  <input type="text" class="form-control" [(ngModel)]="username" />
+  <p>{{ username }}</p>
+
+  <button
+    class="btn btn-primary"
+    [disabled]="checkUsername()"
+    (click)="resetUsername()"
+  >
+    Resete o usuário
+  </button>
+</div>
